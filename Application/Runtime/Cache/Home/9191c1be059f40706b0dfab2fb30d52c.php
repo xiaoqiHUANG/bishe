@@ -20,28 +20,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<script>
 		$(function () {
-			$("#slider").responsiveSlides({
-				auto: true,
-				speed: 500,
-				namespace: "callbacks",
-				pager: true,
-			});
-			$('#horizontalTab').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true   // 100% fit in a container
-			});
-			$('.popup-with-zoom-anim').magnificPopup({
-				type: 'inline',
-				fixedContentPos: false,
-				fixedBgPos: true,
-				overflowY: 'auto',
-				closeBtnInside: true,
-				preloader: false,
-				midClick: true,
-				removalDelay: 300,
-				mainClass: 'my-mfp-zoom-in'
-			});
+			// $("#slider").responsiveSlides({
+			// 	auto: true,
+			// 	speed: 500,
+			// 	namespace: "callbacks",
+			// 	pager: true,
+			// });
+			// $('#horizontalTab').easyResponsiveTabs({
+			// 	type: 'default', //Types: default, vertical, accordion
+			// 	width: 'auto', //auto or any width like 600px
+			// 	fit: true   // 100% fit in a container
+			// });
+			// $('.popup-with-zoom-anim').magnificPopup({
+			// 	type: 'inline',
+			// 	fixedContentPos: false,
+			// 	fixedBgPos: true,
+			// 	overflowY: 'auto',
+			// 	closeBtnInside: true,
+			// 	preloader: false,
+			// 	midClick: true,
+			// 	removalDelay: 300,
+			// 	mainClass: 'my-mfp-zoom-in'
+			// });
 		});
   </script>
 </head>
@@ -52,12 +52,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container-fluid">
 			<nav class="pull">
 				<ul>
-					<li><a href="index.html">首页</a></li>
-					<li><a href="about.html">关于我们</a></li>
-					<li><a href="blog.html">博客</a></li>
-					<li><a href="terms.html">条款</a></li>
-					<li><a href="privacy.html">隐私</a></li>
-					<li><a href="contact.html">联系我们</a></li>
+					<li><a  href="<?php echo U('Personal/index');?>">个人主页</a></li>
+					<li><a  href="#">收件箱</a></li>
+					<li><a  href="<?php echo U('Index/comment');?>">评价</a></li>
+					<li><a  href="#">您的旅程</a></li>
+					<li><a  href="<?php echo U('Index/userProfile');?>">个人资料</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -67,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<!--logo-->
 			<div class="logo">
-				<h1><a href="index.html">iHOME</a></h1>
+				<h1><a href="Index/index">iHOME</a></h1>
 			</div>
 			<!--//logo-->
 			<div class="top-nav">

@@ -1,0 +1,244 @@
+<include file="public/header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/publishing/index.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/shortRent.css" />
+<script src="__PUBLIC__/js/provincesdata.js" type="text/javascript"></script>
+<include file="public/headerTwo" />
+
+<div class="single publishing">
+	<div class="container">
+		<div class="single-buy">
+			<div class="check-top-single">
+				<div class="single-bottom">
+					<!--<h4>开始发布您的房源吧！</h4>-->
+					<form role="form" action="{:U('Index/publishing')}" method="POST" enctype="multipart/form-data">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h4 class="titleHead">房源地址</h4>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">房源位于：</div>
+									</div>
+									<div class="col-md-2">
+										<select class="form-control" name="province" id="province">
+										</select>
+									</div>
+									<div class="col-md-2">
+										<select id="city" name="city" class="form-control">
+											<option value="0">请选择城市</option>
+										</select>
+									</div>
+									<div class="col-md-5">
+										<input type="text" name="detailAddress" class="form-control detailAddress" placeholder="请输入详细地址"/>
+									</div>
+									<div class="col-md-10 col-md-offset-2">
+										<p class="h_check_tip ml10 simsun tip_roomAddress" style="display: none;"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h4 class="titleHead">房源基本情况</h4>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">出租类型：</div>
+									</div>
+									<div class="col-md-2">
+										<select class="form-control rentType" name="rentType">
+											<option value="短租">短租</option>
+											<option value="长租">长租</option>
+										</select>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">最多宜居人数：</div>
+									</div>
+									<div class="col-md-2">
+										<select class="form-control rentPeople" name="rentPeople">
+											<option value="1人">1人</option>
+											<option value="2人">2人</option>
+											<option value="3人">3人</option>
+											<option value="4人">4人</option>
+											<option value="5人">5人</option>
+											<option value="6人">6人</option>
+											<option value="7人">7人</option>
+											<option value="8人">8人</option>
+											<option value="9人">9人</option>
+											<option value="10人">10人</option>
+											<option value="大于10人">大于10人</option>
+										</select>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">房屋面积：</div>
+									</div>
+									<div class="col-md-2">
+										<div class="h_input_box " id="area_red_err">
+											<span class="h_input_text">平米</span>
+											<input type="text" name="roomArea" class="roomArea" id="roomArea" placeholder="0" maxlength="4">
+										</div>
+									</div>
+									<div class="col-md-4">
+										<p class="h_check_tip ml10 simsun tip_roomArea" style="display: none;">请填写房屋面积</p>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">房屋户型：</div>
+									</div>
+									<div class="col-md-2">
+										<div class="h_input_box " id="room_shi_err">
+											<span class="h_input_text">室</span>
+											<input type="text" class="roomtype roomtype_shi" name="roomtype_shi" value="1" maxlength="2">	
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="h_input_box  " id="room_ting_err">
+											<span class="h_input_text">厅</span>
+											<input type="text" class="roomtype roomtype_ting" name="roomtype_ting" value="1" maxlength="2">
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="h_input_box  " id="room_wei_err">
+											<span class="h_input_text">卫</span>
+											<input type="text" class="roomtype roomtype_wei" name="roomtype_wei" value="1" maxlength="2">
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="h_input_box" id="room_chu_err">
+											<span class="h_input_text">浴</span>
+											<input type="text" class="roomtype roomtype_yu" name="roomtype_yu" value="1" maxlength="2">
+										</div>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-2 col-md-offset-2 col-sm-offset-2">
+										<div class="h_input_box  " id="room_chu_err">
+											<span class="h_input_text">厨</span>
+											<input type="text" class="roomtype roomtype_chu" name="roomtype_chu" value="1" maxlength="2">
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="h_input_box  " id="room_yt_err">
+											<span class="h_input_text">阳台</span>
+											<input type="text" class="roomtype roomtype_yt" name="roomtype_yt" value="1" maxlength="2">
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="h_input_box  " id="room_yt_err">
+											<span class="h_input_text">单人床</span>
+											<input type="text" class="roomtype roomtype_sb" name="roomtype_sb" value="1" maxlength="2">
+										</div>
+									</div>
+									
+									<div class="col-md-2">
+										<div class="h_input_box  " id="room_yt_err">
+											<span class="h_input_text">双人床</span>
+											<input type="text" class="roomtype roomtype_db" name="roomtype_db" value="1" maxlength="2">
+										</div>
+									</div>
+									<div class="col-md-10 col-md-offset-2">
+										<p class="h_check_tip ml10 simsun tip_roomtype" style="display: none;">请填写完整整套房屋的户型</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h4 class="titleHead">房源出租信息</h4>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">房源价格：</div>
+									</div>
+									<div class="col-md-2">
+										<input type="text" name="roomPrice" class="form-control roomPrice" placeholder="理想价格"/>
+									</div>
+									<div class="col-md-2">
+										<select name="perRents" class="perRents form-control">
+											<option value="day">元/日</option>
+											<option value="month">元/月</option>
+											<option value="year">元/年</option>
+										</select>
+									</div>
+									<div class="col-md-4">
+										<p class="h_check_tip ml10 simsun tip_roomPrice" style="display: none;">请填写房屋的价格</p>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">出租时间：</div>
+									</div>
+									<div class="col-md-3">
+										<input type="datetime-local" name="beginRentTime" class="beginRentTime form-control" />
+									</div>
+									<div class="col-md-3">
+										<input type="datetime-local" name="endRentTime" class="endRentTime form-control" />
+									</div>
+									<div class="col-md-4">
+										<p class="h_check_tip ml10 simsun tip_roomMsg" style="display: none;">>请填写房屋的出租时间</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h4 class="titleHead">房源描述</h4>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">房源标题：</div>
+									</div>
+									<div class="col-md-8">
+										<input type="text" name="roomTitle" class="roomTitle form-control" placeholder="请输入房源标题！"/>
+									</div>
+									<div class="col-md-10 col-md-offset-2">
+										<p class="h_check_tip ml10 simsun tip_roomTitle" style="display: none;">>请填写房源标题</p>
+									</div>
+								</div>
+								<div class="row form-group">
+									<div class="col-md-2">
+										<div class="address_text">个性描述：</div>
+									</div>
+									<div class="col-md-8">
+										<textarea name="roomDesc" rows="6" cols="" class="roomDesc form-control" placeholder="描述一下您的房源吧！"></textarea>
+									</div>
+									<div class="col-md-10 col-md-offset-2">
+										<p class="h_check_tip ml10 simsun tip_roomDesc" style="display: none;">请填写有关的描述</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group btnCenter">
+							<button type="submit" class="btn btn-success subPublishingBtn col-md-4">提交房源信息并上传图片</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+
+<include file="public/footer" />
+
+<script>
+	
+	//省份城市选择器
+    $.each(GP,function(i){
+		$("#province").append("<option value='" + i + "'>" + GP[i] + "</option>");
+	});
+    $("#province").on('change',function () {
+            var s = $("#province").val();
+            $("#city").get(0).selectedIndex = 0 ;
+            if (s != 0){
+                $("#city").empty();
+                $.each(GT[s],function(i){
+                    $("#city").append("<option value='" + i + "'>" + GT[s][i] + "</option>");
+				});
+            }
+        }
+    );
+</script>
+<script src="__PUBLIC__/js/util.js" type="text/javascript" charset="utf-8"></script>
+<script src="__PUBLIC__/js/shortRent.js" type="text/javascript" charset="utf-8"></script>

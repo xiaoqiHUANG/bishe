@@ -73,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="top-nav">
 				<ul class="right-icons">
 					<li><span><i class="glyphicon glyphicon-phone"> </i>+1384 757 546</span></li>
-					<li><a href="login.html"><i class="glyphicon glyphicon-user"> </i>登录</a></li>
+					<li><a href="<?php echo U('Index/login');?>"><i class="glyphicon glyphicon-user"> </i>登录</a></li>
 					<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 				</ul>
 				<div class="nav-icon">

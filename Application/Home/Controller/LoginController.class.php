@@ -22,4 +22,4 @@ class LoginController extends Controller {
 			$this->error('登陆失败，密码错误',U('Index/login'),1);		}
 	}
 
-	}
+}

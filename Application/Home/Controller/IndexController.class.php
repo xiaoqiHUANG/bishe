@@ -1,6 +1,8 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Think\Upload;
+
 class IndexController extends Controller {
      public function index(){ 
        $homepopular = M('homepopular');
@@ -11,38 +13,89 @@ class IndexController extends Controller {
        $this->assign('gallery',$gallery);
 
        $cache_a= S('site_name');
-
        if (empty($cache_a)) {
          $system_info=M('system_conf')->find();
          $cache_a=S('site_name',$system_info);
        }
-       
-      //  print_r($cache_a['site_name']);exit();
-       
        $this->assign('title','首页—'.$cache_a['site_name']);
-       
        $this->display();
-//        $news = M('News');
-    
-//    $page_cout=3;
-    
-//    $page_num=I('page_num')>0?I('page_num'):1;
-    
-    
-//    $start_index=($page_num-1)*$page_cout;
-// //   $start_index=0;
-    
-//    $news_list=$news -> alias('n')
-//             -> field('n.id as id,title,name,sort_name,content,img,date')
-//             -> join('author ON author_id=author.id')
-//             -> join('news_sort ON sort_ename=news_sort.e_name')
-//             -> order('id desc')
-//             -> limit($start_index,$page_cout)
-//             -> select();
-    
-//    $this->assign('news_list',$news_list);
-      }
+    }
+    public function publishing(){
+        // 保存反馈信息到数据库
+        if (IS_POST) {
+          $publishing_m=M('publishing');
+          //自动填充创建时间
+          $_POST['publishingTime']=date('Y-m-d H:i:s');
 
+          // 做验证、自动完成数据填充
+          if ($publishing_m->create()) {
+            //添加房源
+            if ($publisingId=$publishing_m->add()) {
+              $this->success('房源信息已提交',U('Index/upload',array(id=>$publishing_m[publisingId])));
+            } else {
+              $this->error('房源信息提交失败',U('Index/publishing'));
+            }
+          }else {
+            // 验证失败
+            $this->error($publishing_m->getError());
+          }
+        } else{
+          $cache_a= S('site_name');
+          $this->assign('title','发布房源 - '.$cache_a['site_name']);
+          $this->assign('head','发布房源');
+          $this->display();
+        }
+    }
+    public function upload(){
+      if (IS_POST) {
+          $roomsrc_m=M('roomSrc');
+          // //自动填充创建时间
+          // $_POST['publishingTime']=date('Y-m-d H:i:s');
+
+          // 做验证、自动完成数据填充
+          if ($roomsrc_m->create()) {
+            //添加房源
+            if ($roomId=$roomsrc_m->add()) {
+              $this->success('图片上传成功',U('Index/roomDetail'));
+            } else {
+              $this->error('房源信息提交失败',U('Index/upload'));
+            }
+          }else {
+            // 验证失败
+            $this->error($roomsrc_m->getError());
+          }
+        } else{
+          $cache_a= S('site_name');
+          $this->assign('title','上传照片 - '.$cache_a['site_name']);
+          $this->assign('head','上传照片');
+          $this->display();
+        }
+    }
+
+    public function longRent(){
+        $cache_a= S('site_name');
+        $this->assign('title','长期租房 - '.$cache_a['site_name']);
+        $this->assign('head','长期租房');
+        $this->display();
+    }
+    public function shortRent(){
+        $cache_a= S('site_name');
+        $this->assign('title','短期租房 - '.$cache_a['site_name']);
+        $this->assign('head','短期租房');
+        $this->display();
+    }
+    public function showRooms(){
+        $cache_a= S('site_name');
+        $this->assign('title','房源展示 - '.$cache_a['site_name']);
+        $this->assign('head','房源展示');
+        $this->display();
+    }
+    public function roomDetail(){
+        $cache_a= S('site_name');
+        $this->assign('title','房源详情 - '.$cache_a['site_name']);
+        $this->assign('head','房源详情');
+        $this->display();
+    }
 
      public function login()
     {

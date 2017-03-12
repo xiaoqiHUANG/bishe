@@ -1,0 +1,392 @@
+<include file="public/header" />
+<include file="public/headerTwo" />
+<div class="container">
+	<!--price-->
+	<div class="price">
+		<div class="price-grid">
+			<div class="col-sm-8 price-top">
+				<h4>地址</h4>
+				<input type="text" class="in-drop" id="place" value="" placeholder="请输入您所想要租房的地址" />
+			</div>
+			<!--<div class="col-sm-4 price-top">
+						<h4>Category</h4>
+						<select class="in-drop">
+							<option>Select Category</option>
+							<option>Apartment</option>
+							<option>Independent House</option>
+							<option>Row House</option>
+							<option>Villa</option>
+							<option>Builder Floor</option>
+							<option>Farm House</option>
+							<option>Penthouse</option>
+						</select>
+					</div>-->
+			<div class="col-sm-4 price-top">
+				<h4>住房人数</h4>
+				<select class="in-drop" id="rentPeople">
+							<option>不限</option>
+							<option>1人</option>
+							<option>2人</option>
+							<option>3人</option>
+							<option>4人</option>
+							<option>5人及以上</option>
+						</select>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="price-grid">
+			<div class="col-sm-6 price-top1">
+				<h4>价格区间</h4>
+				<ul>
+					<li>
+						<select class="in-drop" id="lowPrice">
+									<option>最低</option>
+									<option>0</option>
+									<option>100元/月</option>
+									<option>200元/月</option>
+									<option>300元/月</option>
+									<option>400元/月</option>
+									<option>500元/月</option>
+									<option>600元/月</option>
+									<option>700元/月</option>
+									<option>800元/月</option>
+									<option>900元/月</option>
+									<option>1000元/月</option>
+									<option>1500元/月</option>
+									<option>2000元/月</option>
+								</select>
+					</li>
+					<span>-</span>
+					<li>
+						<select class="in-drop" id="topPrice">
+									<option>最高</option>
+									<option>100元/月</option>
+									<option>200元/月</option>
+									<option>300元/月</option>
+									<option>400元/月</option>
+									<option>500元/月</option>
+									<option>600元/月</option>
+									<option>700元/月</option>
+									<option>800元/月</option>
+									<option>900元/月</option>
+									<option>1000元/月</option>
+									<option>1500元/月</option>
+									<option>2000元/月</option>
+									<option>2500元/月</option>
+									<option>不限</option>
+								</select>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 price-top1">
+				<h4>租房月份</h4>
+				<select class="in-drop" id="rentMonth">
+							<option>1个月</option>
+							<option>2个月</option>
+							<option>3个月</option>
+							<option>4个月</option>
+							<option>5个月</option>
+							<option>半年</option>
+							<option>7个月</option>
+							<option>8个月</option>
+							<option>9个月</option>
+							<option>10个月</option>
+							<option>11个月</option>
+							<option>一年</option>
+							<option>一年半</option>
+							<option>两年或以上</option>
+						</select>
+			</div>
+			<div class="col-sm-3 price-top1">
+				<button type="button" class="btn btn-success btn-block" id="searchLongRoom">搜索房源</button>
+				<!--<h4>住房人数</h4>
+						<select class="in-drop">
+							<option>不限</option>
+							<option>1人</option>
+							<option>2人</option>
+							<option>3人</option>
+							<option>4人</option>
+							<option>5人及以上</option>
+						</select>-->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!---->
+	<!--<div class="top-grid">
+				<h3>Top City</h3>
+				<div class="grid-at">
+					<div class="col-md-3 grid-city">
+						<div class="grid-lo">
+							<a href="buy_single.html">
+								<figure class="effect-layla">
+									<img class=" img-responsive" src="__PUBLIC__/images/ce.jpg" alt="img06">
+									<figcaption>
+										<h4>London</h4>
+
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3 grid-city">
+						<div class="grid-lo">
+							<a href="buy_single.html">
+								<figure class="effect-layla">
+									<img class=" img-responsive" src="__PUBLIC__/images/ce1.jpg" alt="img06">
+									<figcaption>
+										<h4>Sydney</h4>
+
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 grid-city grid-city1">
+						<div class="grid-me">
+							<div class="col-md-8 grid-lo1">
+								<div class=" grid-lo">
+									<a href="buy_single.html">
+										<figure class="effect-layla">
+											<img class=" img-responsive" src="__PUBLIC__/images/ce2.jpg" alt="img06">
+											<figcaption>
+												<h4 class="effect1">New York</h4>
+
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 grid-lo2">
+								<div class=" grid-lo">
+									<a href="buy_single.html">
+										<figure class="effect-layla">
+											<img class=" img-responsive" src="__PUBLIC__/images/ce3.jpg" alt="img06">
+											<figcaption>
+												<h4 class="effect2">Rome</h4>
+
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="grid-me">
+							<div class="col-md-6 grid-lo3">
+								<div class=" grid-lo">
+									<a href="buy_single.html">
+										<figure class="effect-layla">
+											<img class="img-responsive" src="__PUBLIC__/images/ce4.jpg" alt="img06">
+											<figcaption>
+												<h4 class="effect3">Singapore</h4>
+
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-6 grid-lo4">
+								<div class=" grid-lo">
+									<a href="buy_single.html">
+										<figure class="effect-layla">
+											<img class="img-responsive" src="__PUBLIC__/images/ce5.jpg" alt="img06">
+											<figcaption>
+												<h4 class="effect3">Paris</h4>
+
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+		</div>-->
+	<!---->
+	<!--premium-project-->
+	<!--<div class="premium">
+			<div class="pre-top">
+				<h5>Lorem Ipsum is simply dummy</h5>
+				<p>$7.24 Lacs-4.36 Lacs 2-3 BHK, Lorem Ipsum</p>
+			</div>
+		</div>-->
+	<!--//premium-project-->
+
+	<!--搜索结果显示-->
+	<div class="container">
+
+		<div class="buy-single">
+			<h3>搜索结果如下：</h3>
+			<div class="box-sin">
+				<div class="col-md-9 single-box">
+					<div class="box-col">
+						<div class=" col-sm-7 left-side ">
+							<a href="single.html"> <img class="img-responsive" src="__PUBLIC__/images/sb.jpg" alt=""></a>
+						</div>
+						<div class="  col-sm-5 middle-side">
+							<h4>入住时间: 随时</h4>
+							<p><span class="container_span">床</span>: <span class="two">2张双人床</span></p>
+							<p> <span class="container_span">浴室</span>: <span class="two">2间</span></p>
+							<p><span class="container_span">建筑面积</span>: <span class="two">100平方米</span></p>
+							<p><span class="container_span">绘图面积</span>:<span class="two">150平方米</span></p>
+							<p><span class="container_span">可租住时间</span> : <span class="two">4-10月</span></p>
+							<p><span class="container_span">价格</span>:<span class="two">100-150元/日</span></p>
+							<div class="   right-side">
+								<a href="roomDetail.html" class="hvr-sweep-to-right more">查看详情</a>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="box-col">
+						<div class=" col-sm-7 left-side ">
+							<a href="single.html"> <img class="img-responsive" src="__PUBLIC__/images/sb.jpg" alt=""></a>
+						</div>
+						<div class="  col-sm-5 middle-side">
+							<h4>入住时间: 随时</h4>
+							<p><span class="container_span">床</span>: <span class="two">2张双人床</span></p>
+							<p> <span class="container_span">浴室</span>: <span class="two">2间</span></p>
+							<p><span class="container_span">建筑面积</span>: <span class="two">100平方米</span></p>
+							<p><span class="container_span">绘图面积</span>:<span class="two">150平方米</span></p>
+							<p><span class="container_span">可租住时间</span> : <span class="two">4-10月</span></p>
+							<p><span class="container_span">价格</span>:<span class="two">100-150元/日</span></p>
+							<div class="   right-side">
+								<a href="roomDetail.html" class="hvr-sweep-to-right more">查看详情</a>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="box-col">
+						<div class=" col-sm-7 left-side ">
+							<a href="single.html"> <img class="img-responsive" src="__PUBLIC__/images/sb.jpg" alt=""></a>
+						</div>
+						<div class="  col-sm-5 middle-side">
+							<h4>入住时间: 随时</h4>
+							<p><span class="container_span">床</span>: <span class="two">2张双人床</span></p>
+							<p> <span class="container_span">浴室</span>: <span class="two">2间</span></p>
+							<p><span class="container_span">建筑面积</span>: <span class="two">100平方米</span></p>
+							<p><span class="container_span">绘图面积</span>:<span class="two">150平方米</span></p>
+							<p><span class="container_span">可租住时间</span> : <span class="two">4-10月</span></p>
+							<p><span class="container_span">价格</span>:<span class="two">100-150元/日</span></p>
+							<div class="   right-side">
+								<a href="roomDetail.html" class="hvr-sweep-to-right more">查看详情</a>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="nav-page">
+				<nav>
+					<ul class="pagination">
+						<li class="disabled">
+							<a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+						</li>
+						<li class="active">
+							<a href="#">1 <span class="sr-only">(current)</span></a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li>
+							<a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+	<!--搜索结果结束-->
+
+	<!---->
+	<div class="container">
+		<div class="future">
+			<h3>推荐房源</h3>
+			<div class="content-bottom-in">
+				<ul id="flexiselDemo1">
+					<li>
+						<div class="project-fur">
+							<a href="single.html"><img class="img-responsive" src="__PUBLIC__/images/pi.jpg" alt="" /> </a>
+							<div class="fur">
+								<div class="fur1">
+									<span class="fur-money">120-180元/天</span>
+									<h6 class="fur-name"><a href="single.html">查看详情</a></h6>
+									<span>法国巴黎</span>
+								</div>
+								<div class="fur2">
+									<span>200平方</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-fur">
+							<a href="single.html"><img class="img-responsive" src="__PUBLIC__/images/pi1.jpg" alt="" /> </a>
+							<div class="fur">
+								<div class="fur1">
+									<span class="fur-money">120-180元/天</span>
+									<h6 class="fur-name"><a href="single.html">查看详情</a></h6>
+									<span>法国巴黎</span>
+								</div>
+								<div class="fur2">
+									<span>200平方</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-fur">
+							<a href="single.html"><img class="img-responsive" src="__PUBLIC__/images/pi2.jpg" alt="" /> </a>
+							<div class="fur">
+								<div class="fur1">
+									<span class="fur-money">120-180元/天</span>
+									<h6 class="fur-name"><a href="single.html">查看详情</a></h6>
+									<span>法国巴黎</span>
+								</div>
+								<div class="fur2">
+									<span>200平方</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-fur">
+							<a href="single.html"><img class="img-responsive" src="__PUBLIC__/images/pi3.jpg" alt="" /> </a>
+							<div class="fur">
+								<div class="fur1">
+									<span class="fur-money">120-180元/天</span>
+									<h6 class="fur-name"><a href="single.html">查看详情</a></h6>
+									<span>法国巴黎</span>
+								</div>
+								<div class="fur2">
+									<span>200平方</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="public/footer" />
+<script src="__PUBLIC__/js/shortRent.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="__PUBLIC_/js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="__PUBLIC_/js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script type="__PUBLIC_/text/javascript" src="__PUBLIC__/js/jquery.flexisel.js"></script>

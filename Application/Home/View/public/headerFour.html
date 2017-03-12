@@ -20,28 +20,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<script>
 		$(function () {
-			$("#slider").responsiveSlides({
-				auto: true,
-				speed: 500,
-				namespace: "callbacks",
-				pager: true,
-			});
-			$('#horizontalTab').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true   // 100% fit in a container
-			});
-			$('.popup-with-zoom-anim').magnificPopup({
-				type: 'inline',
-				fixedContentPos: false,
-				fixedBgPos: true,
-				overflowY: 'auto',
-				closeBtnInside: true,
-				preloader: false,
-				midClick: true,
-				removalDelay: 300,
-				mainClass: 'my-mfp-zoom-in'
-			});
+			// $("#slider").responsiveSlides({
+			// 	auto: true,
+			// 	speed: 500,
+			// 	namespace: "callbacks",
+			// 	pager: true,
+			// });
+			// $('#horizontalTab').easyResponsiveTabs({
+			// 	type: 'default', //Types: default, vertical, accordion
+			// 	width: 'auto', //auto or any width like 600px
+			// 	fit: true   // 100% fit in a container
+			// });
+			// $('.popup-with-zoom-anim').magnificPopup({
+			// 	type: 'inline',
+			// 	fixedContentPos: false,
+			// 	fixedBgPos: true,
+			// 	overflowY: 'auto',
+			// 	closeBtnInside: true,
+			// 	preloader: false,
+			// 	midClick: true,
+			// 	removalDelay: 300,
+			// 	mainClass: 'my-mfp-zoom-in'
+			// });
 		});
   </script>
 </head>

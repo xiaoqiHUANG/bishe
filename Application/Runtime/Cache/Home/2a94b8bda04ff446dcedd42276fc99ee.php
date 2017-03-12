@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container-fluid">
 			<nav class="pull">
 				<ul>
-					<li><a href="index.html">首页</a></li>
+					<li><a href="<?php echo U('Index/index');?>">首页</a></li>
 					<li><a href="about.html">关于我们</a></li>
 					<li><a href="blog.html">博客</a></li>
 					<li><a href="terms.html">条款</a></li>
@@ -73,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="top-nav">
 				<ul class="right-icons">
 					<li><span><i class="glyphicon glyphicon-phone"> </i>+1384 757 546</span></li>
-					<li><a href="login.html"><i class="glyphicon glyphicon-user"> </i>登录</a></li>
+					<li><a href="<?php echo U('Index/login');?>"><i class="glyphicon glyphicon-user"> </i>登录</a></li>
 					<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 				</ul>
 				<div class="nav-icon">
@@ -188,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</a>
 				</div>
 				<div class=" bottom-head">
-					<a href="longRent.html">
+					<a href="<?php echo U('Index/longRent');?>">
 						<div class="buy-media">
 							<i class="apart"> </i>
 							<h6>长期租房</h6>
@@ -204,7 +204,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</a>
 				</div>
 				<div class=" bottom-head">
-					<a href="showRooms.html">
+					<a href="<?php echo U('Index/showRooms');?>">
 						<div class="buy-media">
 							<i class="pg"> </i>
 							<h6>房源展示</h6>
