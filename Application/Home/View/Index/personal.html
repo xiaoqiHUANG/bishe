@@ -1,0 +1,130 @@
+<include file="public/headerFour" />	
+<script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="__PUBLIC__/css/personal.css" rel="stylesheet" type="text/css" media="all" />
+<!--//-->	
+<div class=" banner-buying">
+	<div class=" container">
+	<h3><span>个人</span>中心</h3> 
+	<!---->
+	<include file="public/headerThree" />
+	</div>
+</div>	
+<div class="asked">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3" id="left-photo">
+				<h class="profile"><img src="__ROOT__{$head_photo}"/ alt="5"></h>
+				<table class="table" id="left-table1">
+			        <th>{$Think.session.username}</th>
+			        <tr><td><a href="{:U('Index/userProfile')}">查看个人资料</a></td>
+			        <tr><td><a href="__CONTROLLER__/edit_message">编辑个人资料</a></td>
+    				</table>
+			</div>
+			<div class="col-lg-9">
+				<div class="panel panel-success" id="panel-left">
+   					 <div class="panel-heading">
+        					<h4 class="panel-title">通知</h4>
+    					 </div>
+    					 <div class="panel-body">
+        					<table class="table-hover" id="table-infor">
+						   <tbody>
+						      <tr>
+						         <td id="sayhello"><a href="#">这个网站搞得好累啊</a></td>
+						         <td class="del"><a>X</a></td>
+						      </tr>
+						      <tr>
+						         <td><a href="#">诗文你不要睡懒觉啊</a></td>
+						         <td class="del"><a>X</a></td>
+						      </tr>
+						      <tr>
+						         <td><a href="#">好像快要交初稿了啊</a></td>
+						         <td class="del"><a>X</a></td>
+						      </tr>
+						      <tr>
+						         <td><a href="#">半吊子程序猿做出来的网站就是这样的了</a></td>
+						         <td class="del"><a>X</a></td>
+						      </tr>
+						      <tr>
+						         <td><a href="#">半吊子程序猿做出来的网站就是这样的了</a></td>
+						         <td class="del"><a>X</a></td>
+						      </tr>
+						      <tr>
+						         <td><a href="#">半吊子程序猿做出来的网站就是这样的了</a></td>
+						         <td><a>X</a></td>
+						      </tr>
+						   </tbody>
+						</table>
+    					 </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="panel panel-success">
+   					 <div class="panel-heading">
+        					<h4 class="panel-title">已验证的消息</h4>
+    					 </div>
+    					 <div class="panel-body">
+        					这是一个基本的面板
+    					 </div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-success">
+   					 		<div class="panel-heading">
+        							<h4 class="panel-title">已关联的账号</h4>
+    					 		</div>
+    					 		<div class="panel-body">
+        							这是一个基本的面板
+    							 </div>
+						</div>
+					</div>			
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="panel panel-success">
+   					 		<div class="panel-heading">
+        							<h4 class="panel-title">快速链接</h4>
+    					 		</div>
+    					 		<div class="panel-body">
+        							这是一个基本的面板
+    					 		</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<div class="panel panel-success" id="panel-left2">
+   					 <div class="panel-heading">
+        					<h4 class="panel-title">消息</h4>
+    					 </div>
+    					 <div class="panel-body">
+        					这是一个基本的面板2
+    					 </div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+<!--footer-->
+<include file="public/footer" />	
+<!--//footer-->
+<script type="text/javascript">
+    function sayhello(){
+    	var content=$('#sayhello');
+    	var time=new Date();
+    	var clock=time.getHours();
+    	if(clock>6&&clock<=12){
+    		content.html('上午好!');
+    	}else if(clock>12&&clock<=18){
+    		content.html('下午好!');
+    	}else if(clock>18&&clock<=24){
+    		content.html('晚上好!');
+    	}else{
+    		console.log(clock);
+    		content.html('凌晨好!');
+    	}
+      }
+
+      sayhello();
+</script>

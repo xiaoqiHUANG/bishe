@@ -1,0 +1,44 @@
+ul.infor-nav{
+	list-style-type: none;
+	color:mediumspringgreen;
+}
+ul.infor-nav li{
+	font-size: 20px;
+	color:mediumspringgreen;
+	padding-top: 10px;
+}
+.pro-button{
+	margin-top:20px ;
+	font-size: 20px;
+	color:mediumspringgreen;
+}
+.pro-button button{
+		text-shadow: none;
+		background-color:white;
+		border-color:grey;
+}
+#panel-infor{
+	margin-left:70px;
+	margin-top:5px;
+	height:700px;
+	width:800px;	
+}
+.form-title{
+	color:mediumspringgreen;
+}
+#inforForm{
+	height:20px;
+	margin-left:70px;
+}
+#inforForm2{
+	height:700px;
+	margin-left:70px;
+}
+#infor-submit{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:70px;
+}
+#radio-button{
+	margin-left:25px;
+}

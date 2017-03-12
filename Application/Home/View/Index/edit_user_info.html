@@ -1,0 +1,143 @@
+<include file="public/headerFour" />	
+<!--//theme-style-->
+<link href="__PUBLIC__/css/personal.css" rel="stylesheet" type="text/css" media="all" />
+<link href="__PUBLIC__/css/edit_user_infor.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+<!--//-->	
+<div class=" banner-buying">
+	<div class=" container">
+	<h3><span>编辑</span>个人资料</h3>
+	<include file="public/headerThree" />	       		
+	</div>
+</div>
+<!--//header-->
+<!--contact-->
+<div class="asked">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<ul class="infor-nav">
+					<li><a href="__CONTROLLER__/edit_message">编辑个人资料</a></li>
+					<li><a href="{:U('Personal/upload_headpho')}">头像</a></li>
+					<li><a href="#">信任与验证</a></li>
+					<li><a href="{:U('Index/comment')}">评价</a></li>					
+				</ul>
+				<form class="pro-button">
+					<button type="submit" formaction="{:U('Index/userProfile')}">查看个人资料</button>
+				</form>
+			</div>
+			<div class="col-lg-9">
+				<form  action="{:U('Personal/updateInfo')}" method="POST" class="form_wd_23" enctype="multipart/form-data">
+				    <fieldset id="inforForm">
+				      <div id="legend" class="">
+				        <legend class="form-title">账户信息</legend>
+				      </div>
+				    <div class="control-group">
+
+				          <!-- Text input-->
+				          <label class="control-label">用户名</label>
+				          <div class="controls">
+					          <input class="input-xlarge" name="user_name"  value="{$Think.session.username}">
+						  </div>
+				    </div>
+				    <div class="control-group">
+
+				          <!-- Text input-->
+				          <label class="control-label">密码</label>
+				          <div class="controls">
+					          <input class="input-xlarge" name="user_pwd" type="password" value="{$client_info.user_pwd}">
+						  </div>
+				    </div>
+				    </fieldset>
+				    <br />
+				    <!-- 个人信息 -->
+				    <fieldset id="inforForm2">
+				    <div id="legend" class="">
+       				 	<legend class="form-title">个人信息</legend>
+      				</div>
+				    <div class="control-group">
+
+				          <!-- Text input-->
+				          <label class="control-label" for="input01">姓名</label>
+				          <div class="controls">
+				            <input type="text" placeholder="" class="input-xlarge" required="required" name="real_name" value="{$client_info.real_name}" >
+				            <p class="help-block">您的公开个人资料将仅显示您的名字。申请预订时，房东会看到您的名字和姓氏。</p>
+				          </div>
+				        </div>
+
+				    <div class="control-group">
+					    <label class="control-label">性别</label>
+					        <div class="controls">
+						      <!-- Multiple Radios -->
+						      <label class="radio" id="radio-button" >
+						        <input type="radio" value="男" name="group" checked="checked" name="sex" value="{$client_info.dates}">
+						        男
+						      </label>
+						      <label class="radio" id="radio-button">
+						        <input type="radio" value="女" name="group" name="sex" value="{$client_info.dates}">
+						        女
+						      </label>
+						    </div>			
+					</div>
+				    <div class="control-group">
+
+				          <!-- Select Basic -->
+				          <label class="control-label">出生日期</label>
+				          <div class="controls">
+				           <input id="date" type="date" name="dates" value="{$client_info.dates}"> 
+				          </div>
+
+				        </div>
+
+				    <div class="control-group">
+
+				          <!-- Text input-->
+				          <label class="control-label" for="input01">电子邮箱</label>
+				          <div class="controls">
+				            <input id="email" type="email" placeholder="ihome@gmail.com" class="input-xlarge" name="email_address" value="{$client_info.email_address}" >
+				            <p class="help-block">此数据仅用于分析，我们不会透露给其它用户</p>
+				          </div>
+				        </div>
+
+				    <div class="control-group">
+
+				          <!-- Text input-->
+				          <label class="control-label" for="input01">电话号码</label>
+				          <div class="controls">
+				            <input id="tel" type="tel" placeholder="18812312341" class="input-xlarge" name="tel" value="{$client_info.tel}">
+				            <p class="help-block">只有在您和另一名iHome用户确认预订时，此资料才会被分享。</p>
+				          </div>
+				        </div>
+
+				    <div class="control-group">
+
+				          <!-- Text input-->
+				          <label class="control-label" for="input01">住址</label>
+				          <div class="controls">
+				            <input type="text" placeholder="" class="input-xlarge" required="required" name="address" value="{$client_info.address}" >
+				            <p class="help-block">Supporting help text</p>
+				          </div>
+				        </div>
+				    <!-- <div class="control-group">
+
+				          <!-- Textarea -->
+				          <!-- <label class="control-label">个人简介</label>
+				          <div class="controls">
+				            <div class="textarea">
+				                  <textarea type="text" class="" name="cv" > </textarea>
+				            </div>
+				          </div>
+				    </div> -->
+				        <button type="submit" class="btn btn-success waves-effect">提交</button>
+				    </fieldset>
+
+				  </form>
+			</div>
+		</div>
+			</div>
+	</div>
+</div>
+<!--//contact-->
+<!--footer-->
+<include file="public/footer" />
+<!--//footer-->

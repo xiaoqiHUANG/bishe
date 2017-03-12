@@ -1,0 +1,67 @@
+ul.newlogin-icons li {
+	 display: inline-block;
+	 float:left;
+	 width:48.5%;
+	 margin-right: 3%;
+	   margin-bottom: 3%;
+}
+ul.newlogin-icons li a {
+	display: block;
+  	background: #3b5a99;
+  	text-decoration: none;
+  	padding: 0em;
+  	color: #fff;
+  	border-radius: 5px;
+  	  font-size: 0.95em;
+}
+ul.newlogin-icons li a i {
+  background: url(../images/img-sprite.png)no-repeat 8px -93px #0A3284;
+  width: 32px;
+  height: 32px;
+  background-size: 245px !important;
+}
+ul.newlogin-icons li a.weibo i {
+  background: url(../images/socialicon1.png)no-repeat -40px 0px #AC2925;
+}
+ul.newlogin-icons li a.wechat i {
+  background: url(../images/socialicon1.png)no-repeat -160px 0px #3C763D;
+}
+ul.newlogin-icons li a.qq i {
+  background: url(../images/socialicon1.png)no-repeat -120px 0px darkblue;
+}
+ul.newlogin-icons li a:hover {
+  	background: #0A3284;
+}
+ul.newlogin-icons li a.weibo {
+  	background: red;
+}
+ul.newlogin-icons li a.weibo:hover {
+  	background:#AC2925;
+}
+ul.newlogin-icons li a.wechat {
+  	background: green;
+}
+ul.newlogin-icons li a.wechat:hover {
+  	background: #3C763D;
+}
+ul.login-icons li a.qq {
+  	background: #238FC3;
+}
+ul.newlogin-icons li a.qq:hover {
+  	background:darkblue;
+}
+ul.newlogin-icons li a i {
+	display: inline-block;
+  	background: url(../images/img-sprite.png)no-repeat 11px -135px darkgoldenrod;
+  	width:48px;
+  	height:48px;
+  	vertical-align: middle;
+  	border-radius: 5px 0px 0px 5px;
+}
+ul.newlogin-icons li a span{
+	padding: 0 0 0 5%;
+	display:inline-block;
+}
+ul.newlogin-icons li:nth-child(2),ul.login-icons li:nth-child(4) {
+	 margin-right: 0%;
+}

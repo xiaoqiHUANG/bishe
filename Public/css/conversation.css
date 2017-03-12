@@ -1,0 +1,38 @@
+#comments{
+	height:90%;
+	width:90%;
+	background-color:#00FA9A;
+	margin:0px auto;
+}
+.circle-pro{
+	width:10%;
+	height:10%;
+	border-radius: 50%;
+}
+.comments-button button{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float:right;
+    font-size: 16px;
+    margin-top: -5%;
+    cursor: pointer;
+}
+section p{
+	display: inline-block;
+	margin:-40% 12%;
+}
+.pages-button button{
+	display: inline-block;
+	margin:5% 2%;
+	
+}
+.pages-button button:hover{
+	background-color: #008CBA;
+    color: white;
+}
+ 

@@ -1,0 +1,76 @@
+<include file="public/headerFour" />
+<!--//theme-style-->
+<link href="__PUBLIC__/css/edit_user_infor.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="__PUBLIC__/css/uploadPro.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="__PUBLIC__/css/personal_profile.css" rel="stylesheet" type="text/css" media="all" />
+<!--header-->
+<!--//-->	
+<div class=" banner-buying">
+	<div class=" container">
+	<h3><span>编辑</span>个人资料</h3> 
+	<include file="public/headerThree" />
+	</div>
+</div>
+<!--//header-->
+<!--contact-->
+<div class="asked">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 ">
+				<ul class="infor-nav">
+					<li><a href="{:U('Personal/edit_message')}">编辑个人资料</a></li>
+					<li><a href="{:U('Personal/upload_headpho')}">头像</a></li>
+					<li><a href="#">信任与验证</a></li>
+					<li><a href="{:U('Index/comment')}">评价</a></li>						
+				</ul>
+				<form class="pro-button">
+					<button type="submit" formaction="{:U('Index/userProfile')}">查看个人资料</button>
+				</form>
+			</div>
+			<div class="col-lg-9">
+				<form class="form-horizontal" id="infor-form">
+				    <fieldset>
+				      <div id="legend" class="">
+				        <legend class="form-title">我收到的评价</legend>
+				      </div>
+				      		<div class="list-group">
+									<a href="#" class="list-group-item">
+										<img class="circle_pro" src="__PUBLIC__/images/profile.jpg" />
+										<p>用户名</p>
+										<h4 class="list-group-item-heading">
+											评价内容
+										</h4>
+										<p class="list-group-item-text">
+											<span class="author">{$news_i['name']}·</span> <span class="time">{$news_i['date']|date='Y年m月d日',###}</span>
+										</p>
+									</a>
+									<a href="#" class="list-group-item">
+										<volist name="contents" id="vo">            
+							            <br/>
+							            发布人：<{$vo.author}>
+							            <br/>
+							            发布时间：<{$vo.rtime}>
+							            <br/>
+							            发布内容：<{$vo.content}>
+									</a>
+									<a href="#" class="list-group-item">
+										<img class="circle-pro"src="images/profile.jpg" />
+										<p>用户名</p>
+										<h4 class="list-group-item-heading">
+											评价内容
+										</h4>
+										<p class="list-group-item-text">
+											来自·评价时间
+										</p>
+									</a>
+								</div>
+				    </fieldset>
+				</form>
+			</div>
+		</div>
+</div>
+<!--//contact-->
+<!--footer-->
+<include file="public/footer" />
+<!--//footer-->
+

@@ -1,0 +1,82 @@
+<include file="public/headerFour" />	
+<link href="__PUBLIC__/css/edit_user_infor.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="__PUBLIC__/css/uploadPro.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- upload -->
+<script src="__PUBLIC__/js/site.min.js" type="text/javascript" charset="utf-8"></script>
+<div class=" banner-buying">
+	<div class=" container">
+	<h3><span>上传</span>个人头像</h3> 
+	<!---->
+	<include file="public/headerThree" />	      		
+	</div>
+</div>
+<!--//header-->
+<!--contact-->
+<div class="asked">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<ul class="infor-nav">
+					<li><a href="__CONTROLLER__/edit_message">编辑个人资料</a></li>
+					<li><a href="#">头像</a></li>
+					<li><a href="#">信任与验证</a></li>
+					<li><a href="{:U('Index/comment')}">评价</a></li>					
+				</ul>
+				<form class="pro-button">
+					<button type="submit" formaction="{:U('Index/userProfile')}">查看个人资料</button>
+				</form>
+			</div>
+			<div class="col-lg-9">
+				<form class="form_wd_23" id="infor-form" action="{:U('Personal/update')}" method="POST" enctype="multipart/form-data" class="form_wd_23">
+				    <fieldset>
+				      <div id="legend" class="">
+				        <legend class="form-title">个人头像</legend>
+				      </div>
+				      <div class="right-window">
+				      <p> <input class="form-control" style="display:none" name="user_name"  value="{$Think.session.username}">!清楚的正面照片对帮助房东和房客了解彼此起着重大作用，
+				      	<br />把房子租给一张风景照可不靠谱！<br />
+				      	因此，请上传一张能清楚看到您脸部的照片。 </p>
+				      	<span class="confirm"><button class="btn btn-success waves-effect">提交</button> </span>
+				      </div>
+				      <!-- 头像显示窗口 -->
+				      <div class="head2">
+				      	<a class="avatar" href="{:U('Personal/index')}">
+							<img src="__ROOT__{$head_photo}"/ alt="5" >     
+						</a>	
+				      </div>
+				      <!-- 上传头像 -->
+				      <input class="dropify"  name="head_photo" data-default-file="__ROOT__{$client_info.head_photo}" type="file">
+				    </fieldset>
+  				</form>
+  				<link rel="stylesheet" href="__PUBLIC__/css/dropify.min.css">
+
+			</div>
+		</div>
+		<br />
+		<div class="row">
+				<div class="col-lg-3">
+					<ul class="infor-nav">					
+					</ul>
+				</div>
+			<div class="col-lg-9">			
+  <form class="form-horizontal" >
+    <fieldset id="infor-form2">
+      <div id="legend" class="">
+        <legend class="form-title">个人视频资料</legend>
+      </div>
+
+    </fieldset>
+  </form>
+  <form id="infor-submit">
+  	<button type="submit" class="btn btn-lg btn-danger">提交</button>
+  </form>
+			</div>
+	</div>
+</div>
+<script src="__PUBLIC__/js/dropify.min.js"></script>
+
+ <script>$('.dropify').dropify();</script>
+<!--//contact-->
+<!--footer-->
+<include file="public/footer" />	
+<!--//footer-->

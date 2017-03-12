@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Infor</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="js/scripts.js"></script>
+<link href="css/styles.css" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<link href="css/personal.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/personal-infor.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/trust.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Real Home  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body>
+<!--header-->
+	<div class="navigation">
+			<div class="container-fluid">
+				<nav class="pull">
+					<ul>
+						<li><a  href="index.html">个人主页</a></li>
+						<li><a  href="about.html">收件箱</a></li>
+						<li><a  href="blog.html">评价</a></li>
+						<li><a  href="terms.html">您的旅程</a></li>
+						<li><a  href="privacy.html">个人资料</a></li>
+						<li><a  href="contact.html">账号</a></li>
+					</ul>
+				</nav>			
+			</div>
+		</div>
+
+<div class="header">
+	<div class="container">
+		<!--logo-->
+			<div class="logo">
+				<h1><a href="index.html">i HOME</a></h1>
+			</div>
+		<!--//logo-->
+		<div class="top-nav">
+			<ul class="right-icons">
+				<li><span ><i class="glyphicon glyphicon-phone"> </i>手机端</span></li>
+				<li><a  href="login.html"><i class="glyphicon glyphicon-user"> </i>切换房东模式</a></li>
+				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
+				
+			</ul>
+			<div class="nav-icon">
+				<div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
+						<a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
+					</div>	
+				<!---
+				<a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
+			--->
+			</div>
+		<div class="clearfix"> </div>
+			<!---pop-up-box---->
+				    
+				<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<!---//pop-up-box---->
+				<div id="small-dialog" class="mfp-hide">
+					    <!----- tabs-box ---->
+				<div class="sap_tabs">	
+				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>All Homes</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>For Sale</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>For Rent</span></li>
+							  <div class="clearfix"></div>
+						  </ul>				  	 
+						  <div class="resp-tabs-container">
+						  		<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>All Homes</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+								 	<div class="facts">
+									  	<div class="login">
+											<input type="text" value="Search Address, Neighborhood, City or Zip" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">		
+									 		<input type="submit" value="">
+									 	</div>        
+							        </div>
+						  		</div>
+							     <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>For Sale</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+									<div class="facts">									
+										<div class="login">
+											<input type="text" value="Search Address, Neighborhood, City or Zip" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">		
+									 		<input type="submit" value="">
+									 	</div> 
+							        </div>	
+								 </div>									
+							      <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>For Rent</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+									 <div class="facts">
+										<div class="login">
+											<input type="text" value="Search Address, Neighborhood, City or Zip" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">		
+									 		<input type="submit" value="">
+									 	</div> 
+							         </div>	
+							    </div>
+					      </div>
+					 </div>
+					 <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+				    	<script type="text/javascript">
+						    $(document).ready(function () {
+						        $('#horizontalTab').easyResponsiveTabs({
+						            type: 'default', //Types: default, vertical, accordion           
+						            width: 'auto', //auto or any width like 600px
+						            fit: true   // 100% fit in a container
+						        });
+						    });
+			  			 </script>	
+				</div>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+					
+	
+		</div>
+		<div class="clearfix"> </div>
+		</div>	
+</div>
+<!--//-->	
+<div class=" banner-buying">
+	<div class=" container">
+	<h3><span>编辑</span>个人资料</h3> 
+	<!---->
+	<div class="menu-right">
+		 <ul class="menu">
+			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
+			<ul class="cute">
+				<li class="subitem1"><a href="buy.html">Buy </a></li>
+				<li class="subitem2"><a href="buy.html">Rent </a></li>
+				<li class="subitem3"><a href="buy.html">Hostels </a></li>
+				<li class="subitem1"><a href="buy.html">Resale </a></li>
+				<li class="subitem2"><a href="loan.html">Home Loan</a></li>
+				<li class="subitem3"><a href="buy.html">Apartment </a></li>
+				<li class="subitem3"><a href="dealers.html">Dealers</a></li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+	<div class="clearfix"> </div>
+		<!--initiate accordion-->
+		<script type="text/javascript">
+			$(function() {
+			    var menu_ul = $('.menu > li > ul'),
+			           menu_a  = $('.menu > li > a');
+			    menu_ul.hide();
+			    menu_a.click(function(e) {
+			        e.preventDefault();
+			        if(!$(this).hasClass('active')) {
+			            menu_a.removeClass('active');
+			            menu_ul.filter(':visible').slideUp('normal');
+			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+			        } else {
+			            $(this).removeClass('active');
+			            $(this).next().stop(true,true).slideUp('normal');
+			        }
+			    });
+			
+			});
+		</script>
+      		
+	</div>
+</div>
+<!--//header-->
+<!--contact-->
+<div class="asked">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<ul class="infor-nav">
+					<li><a href="personal-infor.html">编辑个人资料</a></li>
+					<li><a href="#">头像</a></li>
+					<li><a href="#">信任与验证</a></li>
+					<li><a href="#">评价</a></li>					
+				</ul>
+				<form class="pro-button">
+					<button type="submit" formaction="#">查看个人资料</button>
+				</form>
+			</div>
+			<div class="col-lg-9">
+				<form class="form-horizontal">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="form-title">绑定您的芝麻信用账户</legend>
+      </div>
+    <div class="control-group">
+    		<div class="row">
+    			<div class="col-lg-8">
+    				<!-- Text input-->
+	            <p class="content">
+	          	链接您的芝麻信用账号可以让您的房东更放心地分享他们的私人空间,
+	          	您只需链接账户一次。
+				我们可能会和房东分享一些基本信息， 比如您的芝麻分值范围，
+				但是不会分享您具体的芝麻信用评分。<br />
+				<span="know"><a href="#">了解更多</a></span="know">
+	            </p>
+    			</div>
+    			<div class="col-lg-4">
+    				<span class="confirm"><button type="button" class="btn btn-lg btn-success">验证</button>
+                </span>
+    			</div>
+    		</div>
+      </div>
+    </fieldset>
+  </form>
+			</div>
+		</div>
+		<br />
+		<div class="row" >
+				<div class="col-lg-3">
+					<ul class="infor-nav">					
+					</ul>
+				</div>
+			<div class="col-lg-9" id="trust">			
+				<div class="panel panel-success">
+		            <div class="panel-heading">
+		              <h2 class="panel-title">您已验证的消息</h2>
+		            </div>
+            			<div class="panel-body">
+						<p class="subtitle"><b>电子邮件地址</b></p>						
+						<p class="subcontent">您已经确认您的电子邮件地址为：371575713@qq.com。
+							已确认的电子邮件地址非常重要，因为它能够让我们与您进行安全的沟通。</p>
+						<p class="subtitle"><b>电话号码</b></p>						
+						<p class="subcontent">只有在您的预订确认后，我们才会把您的电话号码与另一位Airbnb用户分享。
+						</p>
+            			</div>
+          		</div>
+			</div>
+	</div>
+	<div class="row" >
+				<div class="col-lg-3">
+					<ul class="infor-nav">					
+					</ul>
+				</div>
+			<div class="col-lg-9" id="trust2">			
+				<div class="panel panel-success">
+		            <div class="panel-heading">
+		              <h2 class="panel-title">尚未验证</h2>
+		            </div>
+            			<div class="panel-body">
+						<p class="subtitle"><b>Facebook</b></p>						
+						<p class="subcontent">通过Facebook登录，建立您与世界各地的房东和房客之间的信任关系。
+							<button type="button" class="btn btn-lg btn-link">关联</button>
+						</p>
+						<p class="subtitle"><b>谷歌</b></p>						
+						<p class="subcontent">将您的iHome帐号和谷歌帐号关联，让一切变得简单轻松。
+							<button type="button" class="btn btn-lg btn-link">关联</button>
+						</p>
+						<p class="subtitle"><b>微博</b></p>						
+						<p class="subcontent">把您的iHome帐号与微博帐号关联起来，轻松完成线上验证。
+							<button type="button" class="btn btn-lg btn-link">关连</button>
+						</p>
+						<p class="subtitle"><b>领英</b></p>						
+						<p class="subcontent">把您的iHome帐号与领英关联，與您的职业世界联接。 
+							<button type="button" class="btn btn-lg btn-link">关联</button>
+						</p>
+						
+            			</div>
+          		</div>
+			</div>
+	</div>
+</div>
+<!--//contact-->
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-top-at">
+			<div class="col-md-3 amet-sed">
+				<h4>Our Company</h4>
+				<ul class="nav-bottom">
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="blog.html">For Sale By Owner Blog</a></li>
+					<li><a href="mobile_app.html">Mobile</a></li>
+					<li><a href="terms.html">Terms & Conditions</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>	
+					<li><a href="blog.html">Blog</a></li>
+					
+				</ul>	
+			</div>
+			<div class="col-md-3 amet-sed ">
+				<h4>Work With Us</h4>
+					<ul class="nav-bottom">
+						<li><a href="single.html">Real Estate Brokers</a></li>
+						<li><a href="single.html">Business Development</a></li>
+						<li><a href="single.html">Affiliate Programs</a></li>
+						<li><a href="contact.html">Sitemap</a></li>
+						<li><a href="career.html">Careers</a></li>
+						<li><a href="feedback.html">Feedback</a></li>	
+					</ul>	
+			</div>
+			<div class="col-md-3 amet-sed">
+				<h4>Customer Support</h4>
+				<p>Mon-Fri, 7AM-7PM </p>
+				<p>Sat-Sun, 8AM-5PM </p>
+				<p>177-869-6559</p>
+					<ul class="nav-bottom">
+						<li><a href="#">Live Chat</a></li>
+						<li><a href="faqs.html">Frequently Asked Questions</a></li>
+						<li><a href="suggestion.html">Make a Suggestion</a></li>
+					</ul>	
+			</div>
+			<div class="col-md-3 amet-sed ">
+				<h4>Property Services</h4>
+				   <ul class="nav-bottom">
+						<li><a href="single.html">Residential Property</a></li>
+						<li><a href="single.html">Commercial Property</a></li>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="typo.html">Short Codes</a></li>	
+					</ul>	
+					<ul class="social">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i class="gmail"> </i></a></li>
+						<li><a href="#"><i class="twitter"> </i></a></li>
+						<li><a href="#"><i class="camera"> </i></a></li>
+						<li><a href="#"><i class="dribble"> </i></a></li>
+					</ul>
+			</div>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="col-md-4 footer-logo">
+				<h2><a href="index.html">REAL HOME</a></h2>
+			</div>
+			<div class="col-md-8 footer-class">
+				<p >Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.17sucai.com">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			</div>
+		<div class="clearfix"> </div>
+	 	</div>
+	</div>
+</div>
+<!--//footer-->
+</body>
+</html>
