@@ -7,16 +7,16 @@
 	<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 	<title><?php echo ($title); ?></title>
-	<link href="/bishe/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/styles.css" rel="stylesheet">
+	<link href="/bisheServer/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/bisheServer/Public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/bisheServer/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/bisheServer/Public/css/styles.css" rel="stylesheet">
 	
-	<script src="/bishe/Public/js/jquery.min.js"></script>
-	<script src="/bishe/Public/js/scripts.js"></script>
-	<script src="/bishe/Public/js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<script src="/bishe/Public/js/responsiveslides.min.js"></script>
-	<script src="/bishe/Public/js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script src="/bisheServer/Public/js/jquery.min.js"></script>
+	<script src="/bisheServer/Public/js/scripts.js"></script>
+	<script src="/bisheServer/Public/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script src="/bisheServer/Public/js/responsiveslides.min.js"></script>
+	<script src="/bisheServer/Public/js/easyResponsiveTabs.js" type="text/javascript"></script>
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<script>
 		$(function () {
@@ -139,11 +139,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="/favicon.ico">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/bishe/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/bishe/Public/css/home/headAndFoot.css">
-	 <script src="/bishe/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/bishe/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
-	 <script src="/bishe/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>-->
+	 <link rel="stylesheet" href="/bisheServer/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/bisheServer/Public/css/home/headAndFoot.css">
+	 <script src="/bisheServer/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/bisheServer/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="/bisheServer/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>-->
 	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -250,7 +250,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3>最受欢迎</h3>
 			<?php if(is_array($homepopular_list)): $i = 0; $__LIST__ = $homepopular_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$homepopular_list): $mod = ($i % 2 );++$i;?><div class="col-md-4 box_2">
 					<a href="<?php echo U('Index/room_detail',array(id=>$homepopular_list[id]));?>" class="mask">
-						<img class="img-responsive zoom-img" src="/bishe/Public/<?php echo ($homepopular_list["imgsrc"]); ?>" alt="">
+						<img class="img-responsive zoom-img" src="/bisheServer/Public/<?php echo ($homepopular_list["imgsrc"]); ?>" alt="">
 						<span class="four"><?php echo ($homepopular_list["price"]); ?></span>
 					</a>
 					<div class="most-1">
@@ -325,7 +325,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<?php if(is_array($gallery)): $i = 0; $__LIST__ = $gallery;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$gallery): $mod = ($i % 2 );++$i;?><div class="col-md-3 project-grid">
 						<div class="project-grid-top">
 							<a href="<?php echo U('Index/room_detail',array(id=>$gallery[id]));?>" class="mask">
-								<img src="/bishe/Public/<?php echo ($gallery["imgsrc"]); ?>" class="img-responsive zoom-img" alt="" />
+								<img src="/bisheServer/Public/<?php echo ($gallery["imgsrc"]); ?>" class="img-responsive zoom-img" alt="" />
 							</a>
 							<div class="col-md1">
 								<div class="col-md2">
@@ -358,7 +358,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p class="para-in">iHome提供的房子既漂亮又舒适，房东很nice，为我的旅途增添了不少色彩。</p>
 					<i class="dolor"> </i>
 					<div class="men-grid">
-						<a href="#" class="men-top"><img class="img-responsive men-top" src="/bishe/Public/images/te.jpg" alt=""></a>
+						<a href="#" class="men-top"><img class="img-responsive men-top" src="/bisheServer/Public/images/te.jpg" alt=""></a>
 						<div class="men">
 							<span>苏维安</span>
 							<p>房客</p>
@@ -370,7 +370,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p class="para-in">iHome提供的房子既漂亮又舒适，房东很nice，为我的旅途增添了不少色彩。</p>
 					<i class="dolor"> </i>
 					<div class="men-grid">
-						<a href="#" class="men-top"><img class="img-responsive " src="/bishe/Public/images/te2.jpg" alt=""></a>
+						<a href="#" class="men-top"><img class="img-responsive " src="/bisheServer/Public/images/te2.jpg" alt=""></a>
 						<div class="men">
 							<span>皮特</span>
 							<p>房客</p>
@@ -384,7 +384,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p class="para-in">自从在iHome上分布我的房源信息，我的房子有很多旅客在旅游时都会提前预定，有些甚至当长期租房来与我签租约。</p>
 					<i class="dolor"> </i>
 					<div class="men-grid">
-						<a href="#" class="men-top"><img class="img-responsive " src="/bishe/Public/images/te1.jpg" alt=""></a>
+						<a href="#" class="men-top"><img class="img-responsive " src="/bisheServer/Public/images/te1.jpg" alt=""></a>
 						<div class="men">
 							<span>匹克</span>
 							<p>房东</p>
