@@ -7,18 +7,23 @@
 	<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 	<title><?php echo ($title); ?></title>
-	<link href="/bishe/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/styles.css" rel="stylesheet">
+	<link href="/bisheServer/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/bisheServer/Public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/bisheServer/Public/css/styles.css" rel="stylesheet">
+	<link href="/bisheServer/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	
-	<script src="/bishe/Public/js/jquery.min.js"></script>
-	<script src="/bishe/Public/js/scripts.js"></script>
-	<script src="/bishe/Public/js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<script src="/bishe/Public/js/responsiveslides.min.js"></script>
-	<script src="/bishe/Public/js/easyResponsiveTabs.js" type="text/javascript"></script>
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<script>
+	<script src="/bisheServer/Public/js/jquery.min.js"></script>
+	<script src="/bisheServer/Public/js/scripts.js"></script>
+	<script src="/bisheServer/Public/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script src="/bisheServer/Public/js/responsiveslides.min.js"></script>
+	<script src="/bisheServer/Public/js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script type="application/x-javascript"> 
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+		function hideURLbar(){
+			window.scrollTo(0,1);
+		};
 		$(function () {
 			$("#slider").responsiveSlides({
 				auto: true,
@@ -139,18 +144,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="/favicon.ico">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/bishe/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/bishe/Public/css/home/headAndFoot.css">
-	 <script src="/bishe/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/bishe/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
-	 <script src="/bishe/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>-->
+	 <link rel="stylesheet" href="/bisheServer/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/bisheServer/Public/css/home/headAndFoot.css">
+	 <script src="/bisheServer/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/bisheServer/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="/bisheServer/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>-->
 	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
       <![endif]-->
-<link rel="stylesheet" type="text/css" href="/bishe/Public/css/publishing/index.css" />
-<link rel="stylesheet" type="text/css" href="/bishe/Public/css/shortRent.css" />
-<script src="/bishe/Public/js/provincesdata.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/bisheServer/Public/css/publishing/index.css" />
+<link rel="stylesheet" type="text/css" href="/bisheServer/Public/css/shortRent.css" />
+<script src="/bisheServer/Public/js/provincesdata.js" type="text/javascript"></script>
 <!--initiate accordion-->
 <script type="text/javascript">
     $(function() {
@@ -514,5 +519,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     );
 </script>
-<script src="/bishe/Public/js/util.js" type="text/javascript" charset="utf-8"></script>
-<script src="/bishe/Public/js/shortRent.js" type="text/javascript" charset="utf-8"></script>
+<script src="/bisheServer/Public/js/util.js" type="text/javascript" charset="utf-8"></script>
+<script src="/bisheServer/Public/js/shortRent.js" type="text/javascript" charset="utf-8"></script>
