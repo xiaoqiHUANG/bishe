@@ -1,6 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Think\Upload;
 class IndexController extends Controller {
     public function index(){ 
        $homepopular = M('homepopular');
@@ -29,7 +30,7 @@ class IndexController extends Controller {
           if ($publishing_m->create()) {
             //添加房源
             if ($publisingId=$publishing_m->add()) {
-              $this->success('房源信息已提交',U('Index/upload',array(id=>$publishing_m[publisingId])));
+              $this->success('房源信息已提交',U('Index/upload'));
             } else {
               $this->error('房源信息提交失败',U('Index/publishing'));
             }

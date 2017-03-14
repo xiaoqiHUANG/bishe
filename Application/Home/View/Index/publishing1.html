@@ -1,0 +1,34 @@
+<include file="public/header" />
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/ssi-uploader.min.css" />
+<!--<link rel="stylesheet" href="__PUBLIC__/css/dropify.min.css">-->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/shortRent.css" />
+<include file="public/headerTwo" />
+
+<!---->
+<div class="single upload">
+	<div class="container">
+		<div class="row form-group">
+			<form role="form" action="{:U('Index/upload')}" method="POST" enctype="multipart/form-data">
+                <input type="text" name="text">
+				<input type="file" multiple id="ssi-upload" name="imgs"/>
+				<!--<input type="hidden"  name="prid" value="{$user_info.id}"></form>-->
+                <input type="submit" value="提交">
+			</form>
+		</div>
+	</div>
+</div>
+<script src="__PUBLIC__/js/ssi-uploader.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('#ssi-upload').ssi_uploader({
+		url: '{:U('Index/upload')}',
+		locale:'zh_CN',
+		// onEachUpload: function(fileInfo){
+			// $('.ssi-imgToUpload').attr('name','tmp_name')
+			// console.log(fileInfo.uploadStatus+
+			// 	' '+fileInfo.name+' '+fileInfo.type+' '+fileInfo.size+' '+fileInfo.uploadStatus+' '+fileInfo.responseMsg
+			// );
+		// }
+	});
+</script>
+<include file="public/footer" />
