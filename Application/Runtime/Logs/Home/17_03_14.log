@@ -1,0 +1,55 @@
+[ 2017-03-14T23:26:27+08:00 ] ::1 /bishe/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.057634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.035843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036043s ]
+SQL: SHOW COLUMNS FROM `homepopular` [ RunTime:0.1284s ]
+SQL: SELECT * FROM `homepopular` ORDER BY star LIMIT 3   [ RunTime:0.0082s ]
+SQL: SELECT * FROM `homepopular` LIMIT 4   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000812s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 252 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 252 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 257 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 257 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 252 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 252 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 257 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 257 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 252 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 252 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 257 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 257 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Undefined index: comment-quantity D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 337 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Undefined index: comment-quantity D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 337 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Undefined index: comment-quantity D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 337 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 327 行.
+NOTIC: [8] Undefined index: comment-quantity D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 337 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Program Files\wamp\www\bishe\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 343 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.848329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.848501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.030832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025343s ]
+
