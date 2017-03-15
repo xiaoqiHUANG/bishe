@@ -220,10 +220,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="single upload">
 	<div class="container">
 		<div class="row form-group">
-			<!--<form role="form" action="<?php echo U('Index/');?>" method="POST" enctype="multipart/form-data">-->
-				<input type="file" multiple id="ssi-upload" name="imgs"/>
-				<!--<input type="hidden"  name="prid" value="<?php echo ($user_info["id"]); ?>"></form>-->
-			<!--</form>-->
+			<form role="form" action="<?php echo U('Index/');?>" method="POST" enctype="multipart/form-data">
+				<input type="file" multiple id="ssi-upload" name="imgs[]"/>
+				<input type="hidden" name="pid" value="<?php echo ($publishingId); ?>"></form>
+			</form>
 		</div>
 	</div>
 </div>

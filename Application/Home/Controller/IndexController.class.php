@@ -25,12 +25,12 @@ class IndexController extends Controller {
           $publishing_m=M('publishing');
           //自动填充创建时间
           $_POST['publishingTime']=date('Y-m-d H:i:s');
-
           // 做验证、自动完成数据填充
           if ($publishing_m->create()) {
             //添加房源
             if ($publisingId=$publishing_m->add()) {
-              $this->success('房源信息已提交',U('Index/upload'));
+              $this->success('房源信息已提交',U('Index/upload',array('pid'=>$publisingId)));
+              $this->assign('publishingId',$publisingId);
             } else {
               $this->error('房源信息提交失败',U('Index/publishing'));
             }
@@ -46,11 +46,47 @@ class IndexController extends Controller {
         }
     }
     public function upload(){
+      $roomsrc_m=M('roomSrc');
+      $publishing_m = I('publishing');
       if (IS_POST) {
-          $roomsrc_m=M('roomSrc');
-          // //自动填充创建时间
-          // $_POST['publishingTime']=date('Y-m-d H:i:s');
 
+          $_POST['pid']=$publishing_m[publishingId];
+          // //自动填充创建时间
+          $_POST['time']=date('Y-m-d H:i:s');
+
+        if($_FILES['img']['error']!=4){
+          $upload = new Upload();
+          $upload -> maxSize = 10240000;
+          $upload -> exts = array('jpg','gif','jpeg','png');
+          // $upload -> autoSub = FALSE;
+          $upload->rootPath = './Uploads/'; // 设置附件上传根目录
+          $upload->savePath = 'publishing/'; // 设置附件上传（子）目录
+          $info = $upload -> upload();
+          
+          if(!$info) {
+            $this -> error($upload->getError());
+          } else {
+            $_POST['img'] = $info['imgs']['savepath'].$info['imgs']['savename'];
+          }
+        }
+          // $upload=new Upload();
+          // $upload->maxSize=10240000;
+          // $upload->exts=array('jpg','gif','jpeg','png');
+          // $upload->rootPath = './Uploads/'; // 设置附件上传根目录
+          // $upload->savePath = 'publishing/'; // 设置附件上传（子）目录
+          // $info=$upload->upload();
+          // if (!$info) {
+          //   $this->error($upload->getError());
+          // }else{
+          //   // ./2016-10-14/58003ad34b822.jpg
+          //   $_POST['imgs']=$info['imgs']['savepath'].$info['imgs']['savename'];
+          //   // foreach($info as $file){
+          //   //       // echo $file['savepath'].$file['savename'];
+          //   //       //$data[$k]['picture']=$v['savepath'].$v['savename'];
+          //   //     print_r($file);
+          //   //     // $file->add();
+          //   // }
+          // }
           // 做验证、自动完成数据填充
           if ($roomsrc_m->create()) {
             //添加房源
