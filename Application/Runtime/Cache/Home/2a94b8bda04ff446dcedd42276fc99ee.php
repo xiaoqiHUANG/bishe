@@ -9,16 +9,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<title><?php echo ($title); ?></title>
 	<link href="/bisheServer/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/bisheServer/Public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bisheServer/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="/bisheServer/Public/css/styles.css" rel="stylesheet">
+	<link href="/bisheServer/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	
 	<script src="/bisheServer/Public/js/jquery.min.js"></script>
 	<script src="/bisheServer/Public/js/scripts.js"></script>
 	<script src="/bisheServer/Public/js/jquery.magnific-popup.js" type="text/javascript"></script>
 	<script src="/bisheServer/Public/js/responsiveslides.min.js"></script>
 	<script src="/bisheServer/Public/js/easyResponsiveTabs.js" type="text/javascript"></script>
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<script>
+	<script type="application/x-javascript"> 
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+		function hideURLbar(){
+			window.scrollTo(0,1);
+		};
 		$(function () {
 			$("#slider").responsiveSlides({
 				auto: true,

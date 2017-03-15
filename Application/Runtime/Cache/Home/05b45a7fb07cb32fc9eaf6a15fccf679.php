@@ -7,18 +7,23 @@
 	<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 	<title><?php echo ($title); ?></title>
-	<link href="/bishe/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="/bishe/Public/css/styles.css" rel="stylesheet">
+	<link href="/bisheServer/Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/bisheServer/Public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/bisheServer/Public/css/styles.css" rel="stylesheet">
+	<link href="/bisheServer/Public/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	
-	<script src="/bishe/Public/js/jquery.min.js"></script>
-	<script src="/bishe/Public/js/scripts.js"></script>
-	<script src="/bishe/Public/js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<script src="/bishe/Public/js/responsiveslides.min.js"></script>
-	<script src="/bishe/Public/js/easyResponsiveTabs.js" type="text/javascript"></script>
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<script>
+	<script src="/bisheServer/Public/js/jquery.min.js"></script>
+	<script src="/bisheServer/Public/js/scripts.js"></script>
+	<script src="/bisheServer/Public/js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script src="/bisheServer/Public/js/responsiveslides.min.js"></script>
+	<script src="/bisheServer/Public/js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script type="application/x-javascript"> 
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+		function hideURLbar(){
+			window.scrollTo(0,1);
+		};
 		$(function () {
 			$("#slider").responsiveSlides({
 				auto: true,
@@ -139,11 +144,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="/favicon.ico">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="stylesheet" href="/bishe/Public/bootstrap-3.3.0/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/bishe/Public/css/home/headAndFoot.css">
-	 <script src="/bishe/Public/js/jquery.1.11.1.min.js">	</script>
-	 <script src="/bishe/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
-	 <script src="/bishe/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>-->
+	 <link rel="stylesheet" href="/bisheServer/Public/bootstrap-3.3.0/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="/bisheServer/Public/css/home/headAndFoot.css">
+	 <script src="/bisheServer/Public/js/jquery.1.11.1.min.js">	</script>
+	 <script src="/bisheServer/Public/js/change.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="/bisheServer/Public/bootstrap-3.3.0/js/bootstrap.min.js">	</script>-->
 	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
@@ -326,7 +331,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="grid-lo">
 							<a href="buy_single.html">
 								<figure class="effect-layla">
-									<img class=" img-responsive" src="/bishe/Public/images/ce.jpg" alt="img06">
+									<img class=" img-responsive" src="/bisheServer/Public/images/ce.jpg" alt="img06">
 									<figcaption>
 										<h4>London</h4>
 
@@ -339,7 +344,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="grid-lo">
 							<a href="buy_single.html">
 								<figure class="effect-layla">
-									<img class=" img-responsive" src="/bishe/Public/images/ce1.jpg" alt="img06">
+									<img class=" img-responsive" src="/bisheServer/Public/images/ce1.jpg" alt="img06">
 									<figcaption>
 										<h4>Sydney</h4>
 
@@ -354,7 +359,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class=" grid-lo">
 									<a href="buy_single.html">
 										<figure class="effect-layla">
-											<img class=" img-responsive" src="/bishe/Public/images/ce2.jpg" alt="img06">
+											<img class=" img-responsive" src="/bisheServer/Public/images/ce2.jpg" alt="img06">
 											<figcaption>
 												<h4 class="effect1">New York</h4>
 
@@ -367,7 +372,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class=" grid-lo">
 									<a href="buy_single.html">
 										<figure class="effect-layla">
-											<img class=" img-responsive" src="/bishe/Public/images/ce3.jpg" alt="img06">
+											<img class=" img-responsive" src="/bisheServer/Public/images/ce3.jpg" alt="img06">
 											<figcaption>
 												<h4 class="effect2">Rome</h4>
 
@@ -383,7 +388,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class=" grid-lo">
 									<a href="buy_single.html">
 										<figure class="effect-layla">
-											<img class="img-responsive" src="/bishe/Public/images/ce4.jpg" alt="img06">
+											<img class="img-responsive" src="/bisheServer/Public/images/ce4.jpg" alt="img06">
 											<figcaption>
 												<h4 class="effect3">Singapore</h4>
 
@@ -396,7 +401,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class=" grid-lo">
 									<a href="buy_single.html">
 										<figure class="effect-layla">
-											<img class="img-responsive" src="/bishe/Public/images/ce5.jpg" alt="img06">
+											<img class="img-responsive" src="/bisheServer/Public/images/ce5.jpg" alt="img06">
 											<figcaption>
 												<h4 class="effect3">Paris</h4>
 
@@ -432,7 +437,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-9 single-box">
 					<div class="box-col">
 						<div class=" col-sm-7 left-side ">
-							<a href="single.html"> <img class="img-responsive" src="/bishe/Public/images/sb.jpg" alt=""></a>
+							<a href="single.html"> <img class="img-responsive" src="/bisheServer/Public/images/sb.jpg" alt=""></a>
 						</div>
 						<div class="  col-sm-5 middle-side">
 							<h4>入住时间: 随时</h4>
@@ -450,7 +455,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="box-col">
 						<div class=" col-sm-7 left-side ">
-							<a href="single.html"> <img class="img-responsive" src="/bishe/Public/images/sb.jpg" alt=""></a>
+							<a href="single.html"> <img class="img-responsive" src="/bisheServer/Public/images/sb.jpg" alt=""></a>
 						</div>
 						<div class="  col-sm-5 middle-side">
 							<h4>入住时间: 随时</h4>
@@ -468,7 +473,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="box-col">
 						<div class=" col-sm-7 left-side ">
-							<a href="single.html"> <img class="img-responsive" src="/bishe/Public/images/sb.jpg" alt=""></a>
+							<a href="single.html"> <img class="img-responsive" src="/bisheServer/Public/images/sb.jpg" alt=""></a>
 						</div>
 						<div class="  col-sm-5 middle-side">
 							<h4>入住时间: 随时</h4>
@@ -527,7 +532,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<ul id="flexiselDemo1">
 					<li>
 						<div class="project-fur">
-							<a href="single.html"><img class="img-responsive" src="/bishe/Public/images/pi.jpg" alt="" /> </a>
+							<a href="single.html"><img class="img-responsive" src="/bisheServer/Public/images/pi.jpg" alt="" /> </a>
 							<div class="fur">
 								<div class="fur1">
 									<span class="fur-money">120-180元/天</span>
@@ -542,7 +547,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>
 					<li>
 						<div class="project-fur">
-							<a href="single.html"><img class="img-responsive" src="/bishe/Public/images/pi1.jpg" alt="" /> </a>
+							<a href="single.html"><img class="img-responsive" src="/bisheServer/Public/images/pi1.jpg" alt="" /> </a>
 							<div class="fur">
 								<div class="fur1">
 									<span class="fur-money">120-180元/天</span>
@@ -557,7 +562,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>
 					<li>
 						<div class="project-fur">
-							<a href="single.html"><img class="img-responsive" src="/bishe/Public/images/pi2.jpg" alt="" /> </a>
+							<a href="single.html"><img class="img-responsive" src="/bisheServer/Public/images/pi2.jpg" alt="" /> </a>
 							<div class="fur">
 								<div class="fur1">
 									<span class="fur-money">120-180元/天</span>
@@ -572,7 +577,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>
 					<li>
 						<div class="project-fur">
-							<a href="single.html"><img class="img-responsive" src="/bishe/Public/images/pi3.jpg" alt="" /> </a>
+							<a href="single.html"><img class="img-responsive" src="/bisheServer/Public/images/pi3.jpg" alt="" /> </a>
 							<div class="fur">
 								<div class="fur1">
 									<span class="fur-money">120-180元/天</span>
@@ -590,6 +595,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </div>
+<script src="/bisheServer/Public/js/shortRent.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="__PUBLIC_/js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="__PUBLIC_/js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script type="__PUBLIC_/text/javascript" src="/bisheServer/Public/js/jquery.flexisel.js"></script>
 <!--footer-->
 <div class="footer">
 	<div class="container">
@@ -659,8 +669,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </body>
 
 </html>
-<script src="/bishe/Public/js/shortRent.js" type="text/javascript" charset="utf-8"></script>
-
-<script src="__PUBLIC_/js/jquery.magnific-popup.js" type="text/javascript"></script>
-<script src="__PUBLIC_/js/easyResponsiveTabs.js" type="text/javascript"></script>
-<script type="__PUBLIC_/text/javascript" src="/bishe/Public/js/jquery.flexisel.js"></script>
