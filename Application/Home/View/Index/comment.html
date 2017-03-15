@@ -27,34 +27,64 @@
 					<button type="submit" formaction="{:U('Index/userProfile')}">查看个人资料</button>
 				</form>
 			</div>
+			<div class="comment-filed">
+  <!--发表评论区begin-->
+  <div>
+	<div class="comment-num">
+		<span>{$num}条评论</span>
+	</div>
+	<div>
+		<div>
+		<textarea class="txt-commit" replyid="0"></textarea>
+		</div>
+		<div class="div-txt-submit">
+			<a class="comment-submit" parent_id="0" style="" href="javascript:void(0);"><span style=''>发表评论</span></a>
+		</div>		
+	</div>
+  </div>
+  <!--发表评论区end-->
 			<div class="col-lg-9">
 				<form class="form-horizontal" id="infor-form">
 				    <fieldset>
 				      <div id="legend" class="">
-				        <legend class="form-title">我收到的评价</legend>
+				        <legend class="form-title">我收到的评价({$num})<a href="" class="biaoti"></a></legend>
 				      </div>
 				      		<div class="list-group">
-									<a href="#" class="list-group-item">
+									<!-- <a href="#" class="list-group-item">
 										<img class="circle_pro" src="__PUBLIC__/images/profile.jpg" />
-										<p>用户名</p>
+										<p></p>
 										<h4 class="list-group-item-heading">
-											评价内容
+											评价内容 
 										</h4>
+										{$news_detail[0]['date']|date='Y年m月d日',###}
 										<p class="list-group-item-text">
 											<span class="author">{$news_i['name']}·</span> <span class="time">{$news_i['date']|date='Y年m月d日',###}</span>
 										</p>
-									</a>
+									</a> -->
 									<a href="#" class="list-group-item">
-										<volist name="contents" id="vo">            
+										<volist name="commlist" id="data">
+											<img class="circle_pro" src="src="{$data.head_pic}" alt=""" />            
 							            <br/>
-							            发布人：<{$vo.author}>
-							            <br/>
-							            发布时间：<{$vo.rtime}>
-							            <br/>
-							            发布内容：<{$vo.content}>
+							            <h4>发布内容：{$data.content}</h4>
+							            <p class="list-group-item-text">
+											来自{$data.nickname}·评价时间{$data.create_time}
+										</p>
+							            <div class="cm-footer">
+					  						<a class="comment-reply" comment_id="{$data.id}" href="javascript:void(0);">回复</a>		  				
+					  					</div>
+					  					<!-- 二级评论 -->
+					  						<volist name="data.children" id="child" > 				  			
+									  			<img class="circle_pro" src="src="{$$child.head_pic}" alt=""" />            
+									            <br/>
+									            <h4>发布内容：{$data.content}</h4>
+									            <p class="list-group-item-text">
+													来自{$child.nickname}·评价时间{$child.create_time}
+												</p>
+								            </volist>
+								        </volist>
 									</a>
-									<a href="#" class="list-group-item">
-										<img class="circle-pro"src="images/profile.jpg" />
+									<!-- <a href="#" class="list-group-item">
+										<img class="circle-pro" src="images/profile.jpg" />
 										<p>用户名</p>
 										<h4 class="list-group-item-heading">
 											评价内容
@@ -62,13 +92,14 @@
 										<p class="list-group-item-text">
 											来自·评价时间
 										</p>
-									</a>
+									</a> -->
 								</div>
 				    </fieldset>
 				</form>
 			</div>
 		</div>
 </div>
+<script src="__PUBLIC__/js/comment.js" type="text/javascript" charset="utf-8"></script>
 <!--//contact-->
 <!--footer-->
 <include file="public/footer" />

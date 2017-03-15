@@ -19,7 +19,7 @@
 				<hgroup>
 				<h1>您好！我是<span>{$Think.session.username}!</span></h1>	<br/>
 				<h5 class="report">举报此用户</h5><br/>
-				<h5><a href="__CONTROLLER__/edit_message">编辑个人资料</a></a></h5>
+				<h5><a href="{:U('Personal/edit_message')}">编辑个人资料</a></a></h5>
 				</hgroup>
 			</div>
 		</div>
@@ -53,7 +53,7 @@
 				<a><img class="album" src="__PUBLIC__/images/album1.jpg" /></a>
 				<a><img class="album" src="__PUBLIC__/images/album2.jpg" /></a>
 				<a><img class="album" src="__PUBLIC__/images/album3.jpg" /></a>
-				<h5><a href="{:U('Index/comment')}">查看所有</a></h5><br/>
+				<h5><a href="{:U('Index/wishlist')}">查看所有</a></h5><br/>
 				<hgroup>
 				<h2>评价<span>(number)</span></h2><br/>
 				<!--插入评价数量-->

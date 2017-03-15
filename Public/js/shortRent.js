@@ -2,8 +2,8 @@ $(function(){
 	
 	//发布房源
 	$('.subPublishingBtn').click(function(e){
-		e.stopPropagation();
-		e.preventDefault();
+		// e.stopPropagation();
+		// e.preventDefault();
 		var province = $('#province'),
 			city = $('#city'),
 			detailAddress = $('.detailAddress'),
